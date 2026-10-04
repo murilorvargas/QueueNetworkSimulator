@@ -1,0 +1,18 @@
+SIMULADOR DE REDE DE FILAS - INSTRUÇÕES DE USO
+
+O simulador precisa do Java 21 ou mais recente. Para rodar, abra o terminal na
+pasta que contém a pasta QueueNetworkSimulator e execute os dois comandos abaixo,
+um para compilar e outro para executar:
+
+javac QueueNetworkSimulator/QueueNetworkSimulatorApp.java
+java QueueNetworkSimulator.QueueNetworkSimulatorApp
+
+A rede de filas simulada é descrita no arquivo model.yml, que fica dentro da
+pasta QueueNetworkSimulator. Ele segue o mesmo formato do modelo fornecido, com
+a diferença de que a quantidade de números aleatórios é definida em
+rndnumbersLimit. Para testar outro cenário, basta editar esse arquivo e executar
+de novo, sem precisar compilar outra vez.
+
+Ao final, o simulador mostra para cada fila o tempo acumulado e a probabilidade
+de cada estado, além do número de clientes perdidos. Se o model.yml tiver algum
+erro, aparece uma mensagem começando com "Modelo inválido" indicando o problema.
